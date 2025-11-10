@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, #fff6e6 0%, #ffe7cc 100%);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Portrait Section */
+.portrait-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: url('https://www.transparenttextures.com/patterns/dust.png');
+}
+.portrait {
+  flex: 1 1 300px;
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.portrait:hover {
+  transform: scale(1.05);
+}
+.intro {
+  flex: 2 1 400px;
+  padding: 20px 30px;
+}
+
+/* Feature List */
+.features {
+  background: #fff6e6;
+  padding: 40px 20px;
+  text-align: center;
+}
+.features h2 {
+  margin-bottom: 20px;
+}
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+.features li {
+  background: #fff;
+  margin: 10px auto;
+  padding: 12px 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.features li:hover {
+  transform: translateY(-4px);
+  background: #ffe6b3;
+}
+
+/* Stories */
+.stories {
+  padding: 40px 20px;
+  background: #ffd8a8;
+}
+.stories h2 {
+  text-align: center;
+}
+.stories article {
+  background: #fff;
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.stories article:hover {
+  transform: scale(1.02);
+}
+
+/* Today Section */
+.today {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff6e6;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
